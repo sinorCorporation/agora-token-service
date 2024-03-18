@@ -103,7 +103,7 @@ func NewService() *Service {
 			"message": "pong",
 		})
 	})
-	api.POST("/getToken", s.getToken)
+	api.POST("/token/getToken", s.getToken)
 	s.Server.Handler = api
 	return s
 }
